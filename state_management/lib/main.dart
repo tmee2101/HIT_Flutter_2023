@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, lines_longer_than_80_chars
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:provider/provider.dart';
 
 /// This is a reimplementation of the default Flutter application using provider + [ChangeNotifier].
@@ -138,16 +138,16 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class Count extends StatelessWidget {
-  const Count({Key? key}) : super(key: key);
+// class Count extends StatelessWidget {
+//   const Count({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      /// Calls `context.watch` to make [Count] rebuild when [Counter] changes.
-      '${context.watch<Counter>().count}',
-      key: const Key('counterState'),
-      style: Theme.of(context).textTheme.headlineMedium,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text(
+//       /// Calls `context.watch` to make [Count] rebuild when [Counter] changes.
+//       '${context.watch<Counter>().count}',
+//       key: const Key('counterState'),
+//       style: Theme.of(context).textTheme.headlineMedium,
+//     );
+//   }
+// }
